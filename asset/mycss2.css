@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-.info-header h1 {
+.info-header h3 {
     margin-left: 15px;
 }
 
@@ -40,10 +40,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
 }
 
 .search-dropdown-menu img {
-    height: 20px;
+    height: 15px;
 }
 
 .search-section-form {
@@ -61,7 +62,7 @@
 }
 
 .search-text-bar {
-    width: 80%;
+    width: 70%;
     outline: solid black 0.5px;
     margin-top: 1px;
 }
@@ -81,27 +82,38 @@
 }
 
 .product-box {
-    height: 150px;
-    width: 120px;
+    height: 100px;
+    width: 80px;
     outline: solid 1px black;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .product-box img {
-    width: 95%;
-    height: 80px;
+    width: 85%;
+    height: 60px;
 }
 
 .product-box h5 {
-    font-size: 14px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .product-box p {
-    font-size: 14px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.product-box div {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .booking-section {
