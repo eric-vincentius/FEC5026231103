@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Controllers;
+use App\Http\Controllers\Coba;
+use App\Http\Controllers\PegawaiController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -40,3 +42,15 @@ Route::get('js1', function() {
 Route::get('bootstrap1', function() {
     return view('bootstrap1');
 });
+
+Route::get('dosen', [Coba::class, 'index']);
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+// route blog
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
